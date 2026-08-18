@@ -27,13 +27,13 @@ body {
     background-color: var(--cor-menu);
     padding-top: 1rem;
     text-align: center;
-    position: fixed;
 }
 
 .navegacao {
     height: 3rem;
     width: 50%;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 1rem;
     padding: 1.5rem;
     background-color: var(--menu);
