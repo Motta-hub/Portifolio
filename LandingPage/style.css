@@ -11,10 +11,10 @@ html {
 
 :root {
   --background-color: #121212; /* Fundo principal escuro */
-  --text-color: #e0e0e0;       /* Texto claro para alta legibilidade */
-  --menu: #1e1e1e;             /* Barra de navegação em tom grafite escuro */
-  --cor-menu: #ffffff;         /* Cor dos textos do menu */
-  --cor-letras-menu: #1f1f1f;  /* Fundo dos cards de projetos */
+  --text-color: #e0e0e0; /* Texto claro para alta legibilidade */
+  --menu: #1e1e1e; /* Barra de navegação em tom grafite escuro */
+  --cor-menu: #ffffff; /* Cor dos textos do menu */
+  --cor-letras-menu: #1f1f1f; /* Fundo dos cards de projetos */
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 }
 
 .cabecalho {
-  min-height: 75vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -70,7 +70,7 @@ h1 {
   text-align: center;
   font-weight: bold;
   margin: 0.7rem;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .foto_perfil {
@@ -127,7 +127,9 @@ h1 {
   overflow: hidden;
   box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .projeto-titulo {
@@ -136,8 +138,8 @@ h1 {
 }
 
 .projeto-card:hover {
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.6);
-  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0px 12px 20px rgba(51, 51, 51, 0.6);
+  transform: translateY(10px) scale(1.03);
 }
 
 .projeto-imagem {
@@ -145,4 +147,23 @@ h1 {
   height: 200px;
   object-fit: cover;
   margin: 0;
+  border-radius: 5px;
+}
+
+.contatos-titulo {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 25vh;
+}
+
+.contato-box{
+  background-color: var(--cor-letras-menu);
+  display: flexbox;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; 
+  box-shadow: 0px 12px 20px rgba(51, 51, 51, 0.6);
+  border-radius: 10px;
+  margin-left: 16rem;
+  margin-right: 16rem;
 }
