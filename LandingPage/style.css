@@ -153,6 +153,14 @@ h1 {
   border-radius: 5px;
 }
 
+.section-contato{
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25vh;
+}
+
 .contatos-titulo {
   font-size: 2.5rem;
   text-align: center;
@@ -165,14 +173,39 @@ h1 {
   align-items: center;
   text-align: center;
   flex-direction: column; 
+  padding: 1.5rem;
   box-shadow: 0px 12px 20px rgba(51, 51, 51, 0.6);
   border-radius: 10px;
-  margin-left: 16rem;
-  margin-right: 16rem;
+  width: 50%;
 }
 
-.campo-form{
-  margin-bottom: 1.5rem;
+.nome-form {
+  font-size: 15px;
+  border-radius: 5px;
+  width: 75%;
+  height: 50px;
+  text-align: justify;
+  padding: 1rem;
+  background-color: #292929;
+  color: #E0DCE8;
+  border: 1px solid #5A4A7A
+}
+
+.msg-form {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 75%;
+  height: 75px;
+  text-align: justify;
+  padding: 1rem;
+  background-color: #292929;
+  color: #E0DCE8;
+  border: 1px solid #5A4A7A
+}
+
+.nome-form:focus{
+  background-color: #36333c;
 }
 
 .gp-form{
@@ -184,6 +217,5 @@ h1 {
 }
 
 .campo-form:focus{
-  border-color: var(--cor-menu);
-  box-shadow: #343131;
+  border-color: var(--cor-menu); 
 }
