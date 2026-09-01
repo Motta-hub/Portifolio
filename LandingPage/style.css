@@ -219,3 +219,11 @@ h1 {
 .campo-form:focus{
   border-color: var(--cor-menu); 
 }
+
+.btn-contato {
+  height: 60px;
+  width: 70%;
+  border-radius: 15px;
+  background-color: #5A4A7A;
+  font-size: 1.2rem;
+}
