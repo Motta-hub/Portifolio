@@ -92,22 +92,33 @@
     </section>
 
     <section id="contato" class="section-contato">
-      <h2 class="contatos-titulo">Contato</h3>
+      <h2 class="contatos-titulo">Contato</h2>
       
       <div class="contato-box">
-        <form class="formulario-contato">
+        <form id="formulario-contato" class="formulario-contato">
 
           <div class="gp-form">
-            <input placeholder="Nome" class = "nome-form"/>
+            <input class = "nome-form"
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome da organização"
+              required
+            />
           </div>
 
           <div class="gp-form"> 
-            <textarea placeholder="Mensagem" class = "msg-form"></textarea>
+            <textarea class = "msg-form"
+              id="mensagem"
+              name="mensagem"
+              placeholder="Mensagem"
+              required
+            ></textarea>
           </div>
         </form>
 
         <div class="button-contato">
-          <button class="btn-contato">Enviar</button>
+          <button type="submit" class="btn-contato">Enviar</button>
         </div>
       </div>
     </section>
